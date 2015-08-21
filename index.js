@@ -70,7 +70,7 @@ module.exports = {
     if (_paceConfig && name === 'styles') {
       var paceThemeName = path.join(_paceConfig.color, 'pace-theme-' + _paceConfig.theme + '.css'),
           originalPaceThemePath = path.join(this.app.bowerDirectory, 'pace', 'themes', paceThemeName),
-          addonPaceThemePath = path.join('vendor', 'ember-cli-pace', 'themes', paceThemeName);
+          addonPaceThemePath = path.join('vendor', 'ember-cli-pace', 'themes', 'blue', 'pace-theme-material.css');
 
       if (fs.existsSync(originalPaceThemePath)) {
         this.app.import(originalPaceThemePath);
